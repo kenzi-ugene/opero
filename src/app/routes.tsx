@@ -1,3 +1,4 @@
+import React from "react";
 import { createBrowserRouter } from "react-router";
 import { Root } from "./components/Root";
 import { Home } from "./components/Home";
@@ -8,6 +9,9 @@ import { NotFound } from "./components/NotFound";
 import { Login } from "./components/admin/Login";
 import { Dashboard } from "./components/admin/Dashboard";
 import { ProtectedRoute } from "./components/admin/ProtectedRoute";
+
+const basename =
+  import.meta.env.BASE_URL.replace(/\/$/, "") || "/";
 
 export const router = createBrowserRouter([
   {
@@ -33,4 +37,4 @@ export const router = createBrowserRouter([
       </ProtectedRoute>
     ),
   },
-]);
+], { basename });
