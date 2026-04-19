@@ -6,6 +6,7 @@ import { motion } from "motion/react";
 import { AnimatedSection } from "./AnimatedSection";
 import { heroContainer, heroItem, staggerContainer, staggerItemSoft, VIEWPORT_DEFAULT } from "../motion/siteMotion";
 import React from "react";
+import { Seo } from "./Seo";
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -40,6 +41,10 @@ export function Contact() {
 
   return (
     <div className="bg-white">
+      <Seo
+        title="Contact Opero Malaysia | Software & IT Consulting"
+        description="Contact Opero for software projects, web and app development, or IT consulting in Malaysia. Reach our team for opero tech and business solutions."
+      />
       {/* Hero Section */}
       <section className="pt-32 pb-20">
         <div className="max-w-7xl mx-auto px-8 lg:px-12">

@@ -6,6 +6,7 @@ import { SITE_IMAGES } from "../content/siteImages";
 import { AnimatedSection } from "./AnimatedSection";
 import { heroContainer, heroItem, staggerContainer, staggerItem, VIEWPORT_DEFAULT } from "../motion/siteMotion";
 import React from "react";
+import { Seo } from "./Seo";
 
 export function About() {
   const principles = [
@@ -29,6 +30,10 @@ export function About() {
 
   return (
     <div className="bg-white">
+      <Seo
+        title="About Opero | Technology & Software Company in Malaysia"
+        description="Opero builds IT excellence: software, web platforms, apps, and consulting for clients in Malaysia. Learn our story, values, and approach to technology."
+      />
       {/* Hero Section */}
       <section className="pt-32 pb-20">
         <div className="max-w-7xl mx-auto px-8 lg:px-12">

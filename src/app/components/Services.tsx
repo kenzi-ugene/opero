@@ -3,6 +3,8 @@ import { ArrowRight } from "lucide-react";
 import { motion } from "motion/react";
 import { AnimatedSection } from "./AnimatedSection";
 import { heroContainer, heroItem, staggerContainer, staggerItem, VIEWPORT_DEFAULT } from "../motion/siteMotion";
+import { Seo } from "./Seo";
+import React from "react";
 
 export function Services() {
   const services = [
@@ -98,6 +100,10 @@ export function Services() {
 
   return (
     <div className="bg-white">
+      <Seo
+        title="Software & IT Services | Opero Malaysia"
+        description="Website and system development, apps, integration, cloud, data, and IT consulting. Opero tech and software services for businesses in Malaysia."
+      />
       {/* Hero Section */}
       <section className="pt-32 pb-20">
         <div className="max-w-7xl mx-auto px-8 lg:px-12">

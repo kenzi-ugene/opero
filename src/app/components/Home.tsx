@@ -6,6 +6,7 @@ import { SITE_IMAGES } from "../content/siteImages";
 import { AnimatedSection } from "./AnimatedSection";
 import { EASE, heroContainer, heroItem, VIEWPORT_DEFAULT } from "../motion/siteMotion";
 import React from "react";
+import { Seo } from "./Seo";
 
 export function Home() {
   const services = [
@@ -50,6 +51,10 @@ export function Home() {
 
   return (
     <div className="bg-white">
+      <Seo
+        title="Opero Malaysia | IT Solutions, Software Development & Consulting"
+        description="Opero is a Malaysia technology company for software, web and mobile apps, business systems, and IT consulting—opero software and IT services for teams across Malaysia."
+      />
       {/* Hero Section */}
       <section className="min-h-screen flex items-center">
         <div className="max-w-7xl mx-auto px-8 lg:px-12 py-32">
